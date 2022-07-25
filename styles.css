@@ -61,7 +61,6 @@ body {
 .right-side {
     color: white;
     font-weight: 400;
-    border-bottom: 1px solid white;
 }
 
 /* Portfolio Styles */
@@ -119,18 +118,20 @@ body {
 .two-column-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 500px;
 }
 
 .profile-img-wrapper img {
     width: 100%;
-    height: 50%;
+    height: 125%;
 }
 
 .profile-content-wrapper {
     padding: 30px;
 }
 .profile-content-wrapper h1 {
-    color: lightseagreen
+    color: lightseagreen;
+    text-align: center;
 }
 
 .profile-content-wrapper h3 {
