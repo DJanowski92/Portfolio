@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html id="grad">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">    
     <meta charset="utf-8" />
-    <title>About</title>
 
     <!--  Font package */ -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&family=Martel:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="styles.css"/>
     <link rel="icon" href="images/logos/favicon.png">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <title>About</title>
 
 </head>
 <body id="grad">
@@ -23,11 +27,6 @@
                 <div class="nav-link-wrapper active-nav-link">
                     <a href="about.html">About</a>
                 </div>
-
-                <div class="nav-link-wrapper">
-                    <a href="contact.html">Contact Me</a>
-                </div>
-
             </div>
 
             <div class="right-side">
@@ -40,11 +39,11 @@
         <div class="content-wrapper">
             <div class="two-column-wrapper">
                 <div class="profile-img-wrapper">
-                    <img src="images/profilepic.jpg">
+                    <img src="images/profilepic.jpg" alt="profile pic">
                 </div>
                 <div class="profile-content-wrapper">
                     <h1>
-                        - - - - - - - - - Who I am - - - - - - - - - -
+                        ►   Who I am   ◄
                     </h1>
                     <h3>
                         Hello! I'm a developer, designer and musician near Baltimore who has been building for the web since 2020. I specialize in accessibility, performance and usability without sacrificing creativity.
@@ -55,10 +54,31 @@
                     <h3>
                         I'm now looking for a developer position to finally kick start my career and learn among professionals.
                     </h3>
+                    <h1>
+                        ►   Contact Me!   ◄
+                    </h1>
+
+                    <form class='contact-form' action="https://formsubmit.co/JanowskiDavid92@gmail.com" method="POST">
+                        <input class='contact-email' type="email" name="email" placeholder='Email Address' required>
+                        <input class='contact-message' type="text" name="name" placeholder='Write your message here' required>
+                        <input type="hidden" name="_subject" value="New form submission!">
+                        <button class='contact-button' type="submit">Send</button>
+                        <input type="hidden" name="_next" value="https://djanowski.com/thankYou.html">
+                   </form>
                 </div>
             </div>
         </div>
-
     </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <ul class="socials">
+                <li><a href="https://www.facebook.com/djanowski92" target="_blank" rel="noreferrer noopener"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/djanowski92/" target="_blank" rel="noreferrer noopener"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2022</p>
+        </div>
+    </footer>
 </body>
 </html>
